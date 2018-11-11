@@ -1,0 +1,153 @@
+ <html>
+<head>
+<title>validation</title>
+<script language="javascript">
+
+         function verify() 
+{
+
+            
+            if (document.form1.Exam Name.value == "")
+            {
+                alert("Please give the Exam name");
+                document.form1.Exam Name.focus();
+                return false;
+            }
+
+            
+
+            if (document.form1.Dance_Type.value == "") 
+            {
+                alert("Please give dance type");
+                document.form1.Dance_Type.focus();
+                return false;
+            }
+
+           return( true );
+}
+    
+</script>
+
+</head>
+
+
+<!-- Creating Form -->
+
+<body bgcolor="white"><center><font size=5>
+<form method="POST" action="" name="form1">
+
+<b>EXAM FORM</b></center>
+<table border=1 align=center bgcolor="Lavender" cellpadding=20px><br>
+<td colspan=6 align=center><b>EXAM INFORMATION</td> 
+<form name ="registration Form" action = "Registration html " method="get">
+<br>
+<p>
+<tr><td>Exam Name:</td><td><input type="text" NAME="name" size=30 maxlength=30></tr></td>
+<p>
+<tr><td>Date: 
+<td> 
+<select name="date" id="date"> 
+<option value="-1">Date:</option> 
+<option value="1">1</option> 
+<option value="2">2</option> 
+<option value="3">3</option> 
+  
+<option value="4">4</option> 
+<option value="5">5</option> 
+<option value="6">6</option> 
+<option value="7">7</option> 
+<option value="8">8</option> 
+<option value="9">9</option> 
+<option value="10">10</option> 
+<option value="11">11</option> 
+<option value="12">12</option> 
+  
+<option value="13">13</option> 
+<option value="14">14</option> 
+<option value="15">15</option> 
+<option value="16">16</option> 
+<option value="17">17</option> 
+<option value="18">18</option> 
+<option value="19">19</option> 
+<option value="20">20</option> 
+<option value="21">21</option> 
+  
+<option value="22">22</option> 
+<option value="23">23</option> 
+<option value="24">24</option> 
+<option value="25">25</option> 
+<option value="26">26</option> 
+<option value="27">27</option> 
+<option value="28">28</option> 
+<option value="29">29</option> 
+<option value="30">30</option> 
+  
+<option value="31">31</option> 
+</select> 
+  
+<select id="Month" name="Month"> 
+<option value="-1">Month:</option> 
+<option value="January">Jan</option> 
+<option value="February">Feb</option> 
+<option value="March">Mar</option> 
+<option value="April">Apr</option> 
+<option value="May">May</option> 
+<option value="June">Jun</option> 
+<option value="July">Jul</option> 
+<option value="August">Aug</option> 
+<option value="September">Sep</option> 
+<option value="October">Oct</option> 
+<option value="November">Nov</option> 
+<option value="December">Dec</option> 
+</select> 
+  
+<select name="Year" id="Year"> 
+  
+<option value="-1">Year:</option> 
+<option value="2014">2014</option> 
+<option value="2015">2015</option> 
+<option value="2016">2016</option> 
+<option value="2017">2017</option> 
+<option value="2018">2018</option> 
+<option value="2019">2019</option> 
+<option value="2020">2020</option> 
+</select> 
+</td> 
+</tr></td></tr> 
+
+<tr><td>
+Day:
+<td>
+<select name="day" id="day"> 
+  
+<option value="Monday">Monday</option> 
+<option value="Tuesday">Tuesday</option> 
+<option value="Wednesday">Wednesday</option> 
+<option value="Thureday">Thursday</option> 
+<option value="Friday">Friday</option> 
+<option value="Saturday">Saturday</option> 
+<option value="Sunday">Sunday</option>
+
+</select>
+</td>
+</tr>
+</td>
+</tr>
+ 
+<p>
+<tr><td> 
+Dance_Type:
+<td><select name="dance_type"> 
+<option value="-1" selected>select..</option> 
+<option value="Bharatnatyam">Bharatnatyam</option> 
+<option value="Hip-Hop">Hip-Hop</option> 
+</select></td> 
+</td></tr> 
+
+
+<tr><td colspan =2 align="center"> 
+<button type="submit" onClick="return (verify());"/><a href="success.html">Submit </a></button>
+<button type="reset" name="reset" value="reset" >Reset</td></tr>
+</form>
+</body>
+</html>

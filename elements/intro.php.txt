@@ -1,0 +1,6 @@
+<?php
+$m= new MongoClient();
+echo "connection done";
+$db=$m->mydb;
+echo"Database mydb";
+?>
